@@ -1,0 +1,16 @@
+.TodoSearch {
+    width: 100%;
+    text-align: center;
+}
+
+.TodoSearch input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid rgb(189, 189, 189);
+    transition: .2s ease-in-out;
+}
+.TodoSearch input::placeholder {
+    text-align: center;
+}

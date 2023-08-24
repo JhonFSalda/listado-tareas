@@ -1,0 +1,41 @@
+.TodoItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+    justify-content: space-between;
+    padding: 5px 10px;
+    transition: .1s ease-in-out;
+    border-radius: 10px;
+}
+
+.TodoItem p {
+    cursor: default;
+}
+.TodoItem:hover {
+    border: 1px solid rgb(150, 150, 150);
+    box-shadow: 5px 5px 5px 0px rgba(171,171,171,1);
+}
+
+.TodoItem:hover svg.check,
+.TodoItem svg.check--completed {
+    color: green;
+}
+.TodoItem svg.check,
+.TodoItem svg.xmark {
+    transition: .2s ease;
+}
+.TodoItem svg.check:hover,
+.TodoItem svg.xmark:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.TodoItem:hover svg.xmark {
+    color: red;
+}
+
+.TodoItem-p--completed {
+    text-decoration: line-through;
+    font-style: italic;
+    color: rgb(179, 179, 179);
+}
